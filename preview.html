@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vista UI/UX | Anny Beauty Studio</title>
+  <style>
+    :root {
+      --bg: #f8effc;
+      --purple: #51237b;
+      --line: rgba(81, 35, 123, .16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, Arial, sans-serif;
+      background: radial-gradient(circle at top left, #f7cde5, transparent 26%), linear-gradient(135deg, #fff, var(--bg));
+      color: #281042;
+      padding: 28px;
+    }
+
+    .top {
+      max-width: 1500px;
+      margin: 0 auto 18px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      color: var(--purple);
+      font-size: clamp(2rem, 4vw, 3.8rem);
+    }
+
+    p {
+      margin: 8px 0 0;
+      color: #756684;
+    }
+
+    .stage {
+      max-width: 1500px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 390px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .frame-card {
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background: rgba(255, 255, 255, .6);
+      box-shadow: 0 22px 60px rgba(81, 35, 123, .16);
+      overflow: hidden;
+      padding: 12px;
+    }
+
+    .desktop iframe {
+      width: 100%;
+      height: 860px;
+      border: 0;
+      border-radius: 24px;
+      background: white;
+    }
+
+    .phone {
+      width: 390px;
+      border-radius: 44px;
+      padding: 14px;
+      background: linear-gradient(145deg, #fff, #f2e2fa);
+      box-shadow: 0 28px 70px rgba(81, 35, 123, .2);
+    }
+
+    .phone iframe {
+      width: 360px;
+      height: 780px;
+      border: 0;
+      border-radius: 32px;
+      background: white;
+    }
+
+    .label {
+      display: inline-flex;
+      margin: 0 0 12px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--purple);
+      font-weight: 800;
+      font-size: .8rem;
+    }
+
+    @media(max-width:1000px) {
+      body {
+        padding: 16px
+      }
+
+      .stage {
+        grid-template-columns: 1fr
+      }
+
+      .phone {
+        width: 100%;
+        max-width: 390px;
+        margin: auto
+      }
+
+      .phone iframe {
+        width: 100%
+      }
+
+      .desktop iframe {
+        height: 760px
+      }
+
+      .top {
+        display: block
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top">
+    <div>
+      <h1>Anny Beauty Studio</h1>
+      <p>Composición de presentación con versión desktop y mobile responsive.</p>
+    </div>
+  </div>
+  <main class="stage">
+    <section class="frame-card desktop">
+      <span class="label">Desktop</span>
+      <iframe src="index.html" title="Landing desktop Anny Beauty Studio"></iframe>
+    </section>
+    <aside class="phone">
+      <span class="label">Mobile</span>
+      <iframe src="index.html" title="Landing mobile Anny Beauty Studio"></iframe>
+    </aside>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anny Beauty Studio | Spa y salón de belleza</title>
+  <meta name="description"
+    content="Landing page premium para Anny Beauty Studio: spa, belleza, reservas online, automatizaciones y contacto por WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <header class="site-header" id="inicio">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-script">
+          <img src="assets/logo.png" class="logo" alt="logo">
+        </span>
+        <span class="brand-flower" aria-hidden="true">✧</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-panel" id="nav-panel">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="#agenda">Agendar ahora <span aria-hidden="true">▣</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell container" aria-labelledby="hero-title">
+      <span class="floral floral-left" aria-hidden="true">❦</span>
+      <span class="floral floral-right" aria-hidden="true">❦</span>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Bienvenida a Anny Beauty Studio</p>
+        <h1 id="hero-title">Relájate, renueva y resalta tu belleza</h1>
+        <p class="hero-text">Tratamientos especializados diseñados para cuidar tu bienestar y realzar tu belleza
+          natural.</p>
+        <div class="hero-actions">
+          <a href="#agenda" class="btn btn-primary">Reservar cita <span aria-hidden="true">▣</span></a>
+          <a href="#servicios" class="btn btn-ghost">Ver servicios <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="image-frame hero-image-card">
+          <img src="assets/hero-spa.png" alt="Toallas, velas y flores en un ambiente de spa relajante" />
+          <div class="slider-dots" aria-hidden="true"><span></span><span class="active"></span><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services container" id="servicios" aria-labelledby="services-title">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow ornament">Nuestros servicios</p>
+        <h2 id="services-title">Rituales de belleza pensados para ti</h2>
+      </div>
+
+      <div class="service-track" aria-label="Lista de servicios destacados">
+        <article class="service-card reveal">
+          <img src="assets/service-massage.png" alt="Masaje relajante con ambiente de spa" />
+          <div class="service-content">
+            <h3>Masajes relajantes</h3>
+            <p>Alivia el estrés y renueva tu energía.</p>
+            <div class="card-footer"><strong>$60.000</strong><a href="#agenda">Reservar</a></div>
+          </div>
+        </article>
+
+        <article class="service-card reveal delay-1">
+          <img src="assets/service-facial.png" alt="Limpieza facial en cabina estética" />
+          <div class="service-content">
+            <h3>Limpieza facial</h3>
+            <p>Piel limpia, fresca y rejuvenecida.</p>
+            <div class="card-footer"><strong>$70.000</strong><a href="#agenda">Reservar</a></div>
+          </div>
+        </article>
+
+        <article class="service-card reveal delay-2">
+          <img src="assets/service-nails.png" alt="Manicure con estilo elegante" />
+          <div class="service-content">
+            <h3>Uñas</h3>
+            <p>Manicure y pedicure con estilo y elegancia.</p>
+            <div class="card-footer"><strong>$40.000</strong><a href="#agenda">Reservar</a></div>
+          </div>
+        </article>
+
+        <article class="service-card reveal delay-3">
+          <img src="assets/service-lashes.png" alt="Detalle de pestañas perfectas" />
+          <div class="service-content">
+            <h3>Pestañas</h3>
+            <p>Mirada perfecta, natural y sofisticada.</p>
+            <div class="card-footer"><strong>$50.000</strong><a href="#agenda">Reservar</a></div>
+          </div>
+        </article>
+
+        <article class="service-card reveal delay-4">
+          <img src="assets/service-hair.png" alt="Cabello estilizado y brillante" />
+          <div class="service-content">
+            <h3>Cabello</h3>
+            <p>Tratamientos y estilos que te hacen brillar.</p>
+            <div class="card-footer"><strong>$80.000</strong><a href="#agenda">Reservar</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience container section-shell" id="experiencia" aria-labelledby="experience-title">
+      <div class="experience-content reveal">
+        <p class="eyebrow ornament left">Nuestra experiencia</p>
+        <h2 id="experience-title">Belleza que transforma desde adentro</h2>
+        <p>Más que tratamientos, creamos experiencias únicas para tu bienestar y confianza.</p>
+
+        <div class="stats-grid">
+          <div class="stat-card"><span>♕</span><strong>+500</strong><small>Clientes felices</small></div>
+          <div class="stat-card"><span>✦</span><strong>+5</strong><small>Años de experiencia</small></div>
+          <div class="stat-card"><span>♡</span><strong>100%</strong><small>Atención personalizada</small></div>
+        </div>
+
+        <a href="#contacto" class="btn btn-primary">Conócenos <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="experience-image reveal delay-1">
+        <img src="assets/experience-treatment.png" alt="Clienta recibiendo tratamiento facial relajante" />
+        <span class="soft-leaf" aria-hidden="true">❦</span>
+      </div>
+    </section>
+
+    <section class="booking container" id="agenda" aria-labelledby="booking-title">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow ornament">Agenda online</p>
+        <h2 id="booking-title">Sistema de Reservas Inteligente</h2>
+        <p>Selecciona servicio, fecha, horario y confirma tu cita en pocos pasos.</p>
+      </div>
+
+      <div class="booking-layout">
+        <div class="booking-card reveal">
+          <div class="booking-step">
+            <span class="step-number">1</span>
+            <div>
+              <h3>Seleccionar servicio</h3>
+              <label for="serviceSelect">Elige un servicio</label>
+              <select id="serviceSelect" name="service" required>
+                <option value="" selected disabled>Selecciona un servicio</option>
+                <option value="massages">Masajes relajantes</option>
+                <option value="facial">Limpieza facial</option>
+                <option value="nails">Uñas</option>
+                <option value="lashes">Pestañas</option>
+                <option value="hair">Cabello</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="booking-step calendar-step">
+            <span class="step-number">2</span>
+            <div>
+              <h3>Seleccionar fecha</h3>
+              <div class="calendar" aria-label="Calendario de reserva">
+                <div class="calendar-header">
+                  <button class="icon-btn" id="prevMonth" aria-label="Mes anterior">‹</button>
+                  <strong id="monthLabel">Mes</strong>
+                  <button class="icon-btn" id="nextMonth" aria-label="Mes siguiente">›</button>
+                </div>
+                <div class="weekdays" aria-hidden="true">
+                  <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+                <div class="legend">
+                  <span><i></i>Disponible</span><span><i></i>Seleccionado</span><span><i></i>Ocupado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-step">
+            <span class="step-number">3</span>
+            <div>
+              <h3>Seleccionar horario</h3>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" data-time="09:00 AM">09:00 AM</button>
+                <button type="button" data-time="10:00 AM">10:00 AM</button>
+                <button type="button" data-time="11:00 AM">11:00 AM</button>
+                <button type="button" data-time="12:00 PM" disabled>12:00 PM</button>
+                <button type="button" data-time="02:00 PM">02:00 PM</button>
+                <button type="button" data-time="03:00 PM">03:00 PM</button>
+                <button type="button" data-time="04:00 PM">04:00 PM</button>
+                <button type="button" data-time="05:00 PM" disabled>05:00 PM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="form-card reveal delay-1" id="appointmentForm">
+          <span class="step-number floating">4</span>
+          <h3>Tus datos</h3>
+          <div class="field-row">
+            <label for="firstName">Nombre</label>
+            <input id="firstName" type="text" placeholder="Nombre" required />
+          </div>
+          <div class="field-row">
+            <label for="lastName">Apellido</label>
+            <input id="lastName" type="text" placeholder="Apellido" required />
+          </div>
+          <div class="field-row">
+            <label for="whatsapp">WhatsApp</label>
+            <input id="whatsapp" type="tel" placeholder="WhatsApp" required />
+          </div>
+          <div class="field-row">
+            <label for="formService">Servicio</label>
+            <select id="formService" required>
+              <option value="" selected disabled>Selecciona un servicio</option>
+              <option value="massages">Masajes relajantes</option>
+              <option value="facial">Limpieza facial</option>
+              <option value="nails">Uñas</option>
+              <option value="lashes">Pestañas</option>
+              <option value="hair">Cabello</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <label for="notes">Observaciones</label>
+            <textarea id="notes" rows="3" placeholder="Observaciones (opcional)"></textarea>
+          </div>
+          <button class="btn btn-primary full" type="submit">Confirmar cita <span aria-hidden="true">✓</span></button>
+          <p class="form-note" id="bookingSummary">Selecciona una fecha y un horario para continuar.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="social-proof container" id="opiniones" aria-labelledby="opinions-title">
+      <div class="reviews reveal">
+        <div class="section-heading left-aligned">
+          <p class="eyebrow ornament left">Lo que dicen nuestras clientas</p>
+          <h2 id="opinions-title">Experiencias que inspiran confianza</h2>
+        </div>
+
+        <div class="review-shell">
+          <button class="icon-btn review-nav" id="prevReview" aria-label="Opinión anterior">‹</button>
+          <article class="review-card" id="reviewCard">
+            <img id="reviewAvatar" src="https://api.dicebear.com/8.x/adventurer/svg?seed=Carolina"
+              alt="Foto de cliente" />
+            <div>
+              <div class="stars" id="reviewStars">★★★★★</div>
+              <p id="reviewText">La mejor experiencia que he tenido. El servicio es excepcional y el ambiente es
+                relajante.</p>
+              <strong id="reviewName">Carolina Rojas</strong>
+            </div>
+          </article>
+          <button class="icon-btn review-nav" id="nextReview" aria-label="Siguiente opinión">›</button>
+        </div>
+      </div>
+
+      <div class="benefits reveal delay-1" aria-labelledby="benefits-title">
+        <div class="section-heading left-aligned">
+          <p class="eyebrow ornament left">Beneficios de elegirnos</p>
+          <h2 id="benefits-title">Todo pensado para una experiencia fácil y tranquila</h2>
+        </div>
+        <div class="benefit-grid">
+          <article><span>☑</span><strong>Agenda online 24/7</strong></article>
+          <article><span>✧</span><strong>Confirmación automática</strong></article>
+          <article><span>♡</span><strong>Atención personalizada</strong></article>
+          <article><span>♢</span><strong>Profesionales certificados</strong></article>
+          <article><span>❦</span><strong>Ambiente relajante</strong></article>
+          <article><span>◴</span><strong>Horarios flexibles</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta container reveal" aria-labelledby="cta-title">
+      <span class="floral cta-floral" aria-hidden="true">❦</span>
+      <div>
+        <h2 id="cta-title">Reserva tu momento de bienestar</h2>
+        <p>Tu belleza y bienestar merecen el mejor cuidado.</p>
+      </div>
+      <a href="#agenda" class="btn btn-light">Agendar ahora <span aria-hidden="true">▣</span></a>
+    </section>
+  </main>
+
+  <footer class="footer container" id="contacto">
+    <div class="footer-brand">
+      <a class="brand" href="#inicio" aria-label="Anny Beauty Studio">
+        <span class="brand-script">
+          <img src="assets/logo.png" alt="logo">
+        </span>
+      </a>
+      <p>Belleza que inspira, bienestar que transforma.</p>
+      <div class="social-links" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="TikTok">♪</a>
+        <a href="#" aria-label="WhatsApp">☏</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Enlaces rápidos</h3>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Servicios</h3>
+      <a href="#agenda">Masajes</a>
+      <a href="#agenda">Faciales</a>
+      <a href="#agenda">Uñas</a>
+      <a href="#agenda">Pestañas</a>
+      <a href="#agenda">Cabello</a>
+    </div>
+
+    <div class="footer-column contact-info">
+      <h3>Información</h3>
+      <p>Cra. 25 #45-67<br>Medellín, Colombia</p>
+      <p>Lun - Sáb: 8:00 AM - 8:00 PM<br>Dom: 9:00 AM - 4:00 PM</p>
+      <p>+57 300 123 4567</p>
+    </div>
+
+    <div class="footer-column whatsapp-box">
+      <h3>Contáctanos</h3>
+      <a href="https://wa.me/573001234567" target="_blank" rel="noopener" class="btn btn-primary">Escríbenos por
+        WhatsApp <span>→</span></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Tu cita ha sido registrada.</div>
+
+  <script src="script.js" defer></script>
+  <script type="module" src="./firebase-config.js"></script>
+  <script type="module" src="./firebase-booking.js"></script>
+
+</body>
+
+</html>
