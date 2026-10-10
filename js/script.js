@@ -137,3 +137,4 @@ if (reviewAvatar && reviewText && reviewName) {
     renderReview();
   }, 5200);
 }
+

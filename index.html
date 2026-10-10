@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -70,58 +71,8 @@
       </div>
     </section>
 
-    <section class="services container" id="servicios" aria-labelledby="services-title">
-      <div class="section-heading centered reveal">
-        <p class="eyebrow ornament">Nuestros servicios</p>
-        <h2 id="services-title">Rituales de belleza pensados para ti</h2>
-      </div>
-
-      <div class="service-track" aria-label="Lista de servicios destacados">
-        <article class="service-card reveal">
-          <img src="assets/service-massage.png" alt="Masaje relajante con ambiente de spa" />
-          <div class="service-content">
-            <h3>Masajes relajantes</h3>
-            <p>Alivia el estrés y renueva tu energía.</p>
-            <div class="card-footer"><strong>$60.000</strong><a href="#agenda">Reservar</a></div>
-          </div>
-        </article>
-
-        <article class="service-card reveal delay-1">
-          <img src="assets/service-facial.png" alt="Limpieza facial en cabina estética" />
-          <div class="service-content">
-            <h3>Limpieza facial</h3>
-            <p>Piel limpia, fresca y rejuvenecida.</p>
-            <div class="card-footer"><strong>$70.000</strong><a href="#agenda">Reservar</a></div>
-          </div>
-        </article>
-
-        <article class="service-card reveal delay-2">
-          <img src="assets/service-nails.png" alt="Manicure con estilo elegante" />
-          <div class="service-content">
-            <h3>Uñas</h3>
-            <p>Manicure y pedicure con estilo y elegancia.</p>
-            <div class="card-footer"><strong>$40.000</strong><a href="#agenda">Reservar</a></div>
-          </div>
-        </article>
-
-        <article class="service-card reveal delay-3">
-          <img src="assets/service-lashes.png" alt="Detalle de pestañas perfectas" />
-          <div class="service-content">
-            <h3>Pestañas</h3>
-            <p>Mirada perfecta, natural y sofisticada.</p>
-            <div class="card-footer"><strong>$50.000</strong><a href="#agenda">Reservar</a></div>
-          </div>
-        </article>
-
-        <article class="service-card reveal delay-4">
-          <img src="assets/service-hair.png" alt="Cabello estilizado y brillante" />
-          <div class="service-content">
-            <h3>Cabello</h3>
-            <p>Tratamientos y estilos que te hacen brillar.</p>
-            <div class="card-footer"><strong>$80.000</strong><a href="#agenda">Reservar</a></div>
-          </div>
-        </article>
-      </div>
+    <section class="services-grid" id="servicesContainer" aria-labelledby="services-title">
+      
     </section>
 
     <section class="experience container section-shell" id="experiencia" aria-labelledby="experience-title">
@@ -160,12 +111,11 @@
               <h3>Seleccionar servicio</h3>
               <label for="serviceSelect">Elige un servicio</label>
               <select id="serviceSelect" name="service" required>
-                <option value="" selected disabled>Selecciona un servicio</option>
-                <option value="massages">Masajes relajantes</option>
-                <option value="facial">Limpieza facial</option>
-                <option value="nails">Uñas</option>
-                <option value="lashes">Pestañas</option>
-                <option value="hair">Cabello</option>
+
+                <option value="" selected disabled>
+                  Selecciona un servicio
+                </option>
+
               </select>
             </div>
           </div>
@@ -196,14 +146,7 @@
             <div>
               <h3>Seleccionar horario</h3>
               <div class="time-grid" id="timeGrid">
-                <button type="button" data-time="09:00 AM">09:00 AM</button>
-                <button type="button" data-time="10:00 AM">10:00 AM</button>
-                <button type="button" data-time="11:00 AM">11:00 AM</button>
-                <button type="button" data-time="12:00 PM" disabled>12:00 PM</button>
-                <button type="button" data-time="02:00 PM">02:00 PM</button>
-                <button type="button" data-time="03:00 PM">03:00 PM</button>
-                <button type="button" data-time="04:00 PM">04:00 PM</button>
-                <button type="button" data-time="05:00 PM" disabled>05:00 PM</button>
+
               </div>
             </div>
           </div>
@@ -227,12 +170,11 @@
           <div class="field-row">
             <label for="formService">Servicio</label>
             <select id="formService" required>
-              <option value="" selected disabled>Selecciona un servicio</option>
-              <option value="massages">Masajes relajantes</option>
-              <option value="facial">Limpieza facial</option>
-              <option value="nails">Uñas</option>
-              <option value="lashes">Pestañas</option>
-              <option value="hair">Cabello</option>
+
+              <option value="" selected disabled>
+                Selecciona un servicio
+              </option>
+
             </select>
           </div>
           <div class="field-row">
@@ -345,10 +287,15 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite">Tu cita ha sido registrada.</div>
 
-  <script src="script.js" defer></script>
-  <script type="module" src="./firebase-config.js"></script>
-  <script type="module" src="./firebase-booking.js"></script>
+  <script type="module" src="./js/script.js"></script>
 
+  <script type="module" src="./js/services.js"></script>
+
+  <script type="module" src="./js/calendar.js"></script>
+
+  <script type="module" src="./js/schedule.js"></script>
+
+  <script type="module" src="./js/booking.js"></script>
 </body>
 
 </html>

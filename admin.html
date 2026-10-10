@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Anny Beauty Studio</title>
+    <link rel="stylesheet" href="admin.css?v=2">
+</head>
+
+<body>
+    <div class="layout">
+
+        <aside class="sidebar">
+
+
+            <div class="logo-admin">
+
+                <img src="./assets/logo.png" alt="">
+
+            </div>
+
+
+
+            <nav>
+
+
+                <button data-view="dashboard">
+
+                    📊 Dashboard
+
+                </button>
+
+
+
+                <button data-view="appointments">
+
+                    📅 Citas
+
+                </button>
+
+
+
+                <button data-view="schedule">
+
+                    ⏰ Horario
+
+                </button>
+
+
+            </nav>
+
+
+        </aside>
+
+
+        <main>
+
+
+            <section id="dashboard" class="view active">
+
+                <h2>Dashboard</h2>
+
+                <div class="cards">
+
+
+                    <div class="card">
+                        <h3>Total</h3>
+                        <p id="totalAppointments">0</p>
+                    </div>
+
+
+                    <div class="card">
+                        <h3>Hoy</h3>
+                        <p id="todayAppointments">0</p>
+                    </div>
+
+
+
+                    <div class="card">
+                        <h3>Pendientes</h3>
+                        <p id="pendingAppointments">0</p>
+                    </div>
+
+
+
+                    <div class="card">
+                        <h3>Confirmadas</h3>
+                        <p id="confirmedAppointments">0</p>
+                    </div>
+
+
+
+                    <div class="card">
+                        <h3>Canceladas</h3>
+                        <p id="cancelAppointments">0</p>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <section id="appointments" class="view">
+
+                <h2>Citas</h2>
+
+                <div class="table-container">
+
+                    <div class="filters">
+
+
+                        <button data-filter="all">
+                            Todas
+                        </button>
+
+
+                        <button data-filter="pending">
+                            Pendientes
+                        </button>
+
+
+                        <button data-filter="confirmed">
+                            Confirmadas
+                        </button>
+
+
+                        <button data-filter="cancelled">
+                            Canceladas
+                        </button>
+
+
+                    </div>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Cliente
+                                </th>
+
+                                <th>
+                                    WhatsApp
+                                </th>
+
+                                <th>
+                                    Servicio
+                                </th>
+
+                                <th>
+                                    Fecha
+                                </th>
+
+                                <th>
+                                    Hora
+                                </th>
+
+                                <th>
+                                    Estado
+                                </th>
+
+                                <th>
+                                    Acción
+                                </th>
+
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="appointmentsList">
+
+                        </tbody>
+
+
+                    </table>
+
+
+                </div>
+
+            </section>
+
+
+            <section id="schedule" class="view">
+
+
+                <h2>
+                    Disponibilidad de horarios
+                </h2>
+
+
+                <div class="schedule-header">
+
+                    <button id="openScheduleModal">
+
+                        ⚙ Configurar horario
+
+                    </button>
+
+
+                </div>
+
+
+
+                <h3>
+                    Mañana
+                </h3>
+
+
+                <div id="morning"></div>
+
+
+
+
+                <h3>
+                    Tarde
+                </h3>
+
+
+                <div id="afternoon"></div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <div id="scheduleModal" class="modal">
+
+
+        <div class="modal-content">
+
+
+            <button id="closeScheduleModal" class="close-modal">
+
+                ×
+            </button>
+
+
+
+            <h2>
+                Configurar horario
+            </h2>
+
+
+
+            <div class="schedule-config">
+
+
+                <label>
+                    Intervalo:
+                </label>
+
+
+                <select id="interval">
+
+                    <option value="60">
+                        Cada hora
+                    </option>
+
+
+                    <option value="30">
+                        Cada 30 minutos
+                    </option>
+
+
+                </select>
+
+
+
+                <h3>
+                    Mañana
+                </h3>
+
+
+                <div class="schedule-inputs">
+
+
+                    <input type="time" id="morningStart" value="08:00">
+
+
+
+                    <input type="time" id="morningEnd" value="12:00">
+
+
+                </div>
+
+
+
+
+                <h3>
+                    Tarde
+                </h3>
+
+
+                <div class="schedule-inputs">
+
+
+                    <input type="time" id="afternoonStart" value="14:00">
+
+
+
+                    <input type="time" id="afternoonEnd" value="18:00">
+
+
+                </div>
+
+
+
+
+                <button id="generateSchedule">
+
+                    Generar horarios
+
+                </button>
+
+
+
+                <hr>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div id="assistant">
+
+
+        <img id="assistantAvatar" src="./assets/avatar/saludo.png" alt="Asistente">
+
+
+        <div id="assistantBubble">
+
+
+            <button id="closeAssistant">
+                ×
+            </button>
+
+
+            <p id="assistantText"></p>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script type="module" src="./js/admin.js"></script>
+
+    <script type="module" src="./js/avatar.js"></script>
+</body>
+
+</html>

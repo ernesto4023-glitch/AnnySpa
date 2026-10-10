@@ -1,0 +1,20 @@
+[
+    {
+        "id":"masaje-relajante",
+        "name":"Masaje relajante",
+        "price":80000,
+        "image":"assets/service-massage.png"
+    },
+    {
+        "id":"limpieza-facial",
+        "name":"Limpieza facial",
+        "price":90000,
+        "image":"assets/service-facial.png"
+    },
+    {
+        "id":"manicure",
+        "name":"Manicure y uñas",
+        "price":60000,
+        "image":"assets/service-nails.png"
+    }
+]
