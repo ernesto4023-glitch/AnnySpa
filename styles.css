@@ -1177,6 +1177,7 @@ textarea:focus {
 .whatsapp-box .btn {
   margin-top: 6px;
   width: fit-content;
+  color: #fff;
 }
 
 .toast {
@@ -1427,19 +1428,19 @@ textarea:focus {
 
 
 .calendar-day.disabled,
-.calendar-day:disabled{
+.calendar-day:disabled {
 
-    background:#eee !important;
+  background: #eee !important;
 
-    color:#aaa !important;
+  color: #aaa !important;
 
-    cursor:not-allowed !important;
+  cursor: not-allowed !important;
 
-    text-decoration:line-through;
+  text-decoration: line-through;
 
-    opacity:0.6;
+  opacity: 0.6;
 
-    border:1px solid #ddd;
+  border: 1px solid #ddd;
 
 }
 
@@ -1448,11 +1449,146 @@ textarea:focus {
 /* evitar efecto hover */
 
 .calendar-day.disabled:hover,
-.calendar-day:disabled:hover{
+.calendar-day:disabled:hover {
 
-    background:#eee;
+  background: #eee;
 
-    transform:none;
+  transform: none;
+
+}
+
+/* =================================
+   SERVICIO A DOMICILIO
+================================= */
+
+
+.home-service {
+
+  margin: 50px auto;
+
+}
+
+
+
+.home-service-card {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 40px;
+
+  background:
+    linear-gradient(135deg,
+      #ffffff,
+      #faf1ff);
+
+  padding: 45px;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 15px 40px rgba(100, 50, 120, .12);
+
+}
+
+
+
+.home-service-icon {
+
+  min-width: 120px;
+
+  height: 120px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 55px;
+
+  background: #f3ddff;
+
+}
+
+
+
+.home-service-content h2 {
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 42px;
+
+  color: #482060;
+
+  margin: 10px 0;
+
+}
+
+
+
+.home-service-content p {
+
+  color: #75627e;
+
+  line-height: 1.7;
+
+}
+
+
+
+.home-service-content ul {
+
+  padding: 0;
+
+  list-style: none;
+
+  display: grid;
+
+  gap: 12px;
+
+  margin-top: 25px;
+
+}
+
+
+
+.home-service-content li {
+
+  color: #5c326e;
+
+  font-weight: 600;
+
+}
+
+
+
+
+@media(max-width:768px) {
+
+
+  .home-service-card {
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 30px;
+
+  }
+
+
+  .home-service-content h2 {
+
+    font-size: 30px;
+
+  }
+
 
 }
 
